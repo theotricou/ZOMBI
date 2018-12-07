@@ -1,9 +1,9 @@
 ### PARAMETERS SPECIES TREE LEVEL ###
 ## Please refer to the manual for more details
 #
-SPECIATION	f:0.1
+SPECIATION	f:spe_rate
 #
-EXTINCTION	f:0.02
+EXTINCTION	f:ext_rate
 #
 ## STOPPING_RULE = 0 to control depending on TIME, = 1 to control depending on TOTAL_LINEAGES
 STOPPING_RULE	1
@@ -14,7 +14,7 @@ TOTAL_TIME	1
 #
 ## TOTAL_LINEAGES says when to stop if STOPPING_RULE = 1
 #
-TOTAL_LINEAGES	20
+TOTAL_LINEAGES	nb_lin
 #
 ## The simulation fails (and tries again) if the number of lineages in the EST goes below MIN_LINEAGES (when using the stopping rule = 0)
 #

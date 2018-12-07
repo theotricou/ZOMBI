@@ -3,20 +3,20 @@
 #
 ## Main events
 #
-DUPLICATION f:1
-TRANSFER f:2
-LOSS f:3
-INVERSION f:2
-TRANSLOCATION f:2
-ORIGINATION f:2
+DUPLICATION f:dup_rate
+TRANSFER f:tra_rate
+LOSS f:los_rate
+INVERSION f:0
+TRANSLOCATION f:0
+ORIGINATION f:ori_rate
 #
 ## Extensions
 #
 DUPLICATION_EXTENSION f:1
 TRANSFER_EXTENSION f:1
 LOSS_EXTENSION f:1
-INVERSION_EXTENSION f:0.05
-TRANSLOCATION_EXTENSION f:0.3
+INVERSION_EXTENSION f:1
+TRANSLOCATION_EXTENSION f:1
 #
 ## Transfer related parameters
 #
@@ -26,11 +26,11 @@ REPLACEMENT_TRANSFER 1
 #
 ## Genome size related parameters
 #
-INITIAL_GENOME_SIZE	100
+INITIAL_GENOME_SIZE	nb_gene
 #
 ## MIN_GENOME_SIZE prevents genome to become too small. Any losses affecting genomes under this size will be ignored
 #
-MIN_GENOME_SIZE	10
+MIN_GENOME_SIZE	min_gene
 #
 ## Output related parameters
 #
